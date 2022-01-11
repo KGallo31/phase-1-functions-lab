@@ -1,8 +1,6 @@
 const hq = 42;
 const oneBlock = 264;
-function distanceFromHqInBlocks(pickupLocation) {
-    return Math.abs(42-pickupLocation);
-  }
+let distanceFromHqInBlocks = (pickupLocation) => Math.abs(42-pickupLocation);
 function distanceFromHqInFeet(pickupLocation) {
     return Math.abs(distanceFromHqInBlocks(pickupLocation)*oneBlock);
   }
